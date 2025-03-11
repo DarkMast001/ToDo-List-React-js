@@ -1,0 +1,29 @@
+.task_ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-block-end: 40px;
+	gap: 20px;
+}
+
+.task_li {
+	border-radius: 10px;
+	max-width: 650px;
+	width: 100%;
+	height: 50px;
+	border: 1px solid #000;
+	list-style: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 10px;
+	padding-right: 15px;
+}
+
+.task_text {
+	font-family: var(--font-family);
+	tab-size: var(--all-font-size);
+}

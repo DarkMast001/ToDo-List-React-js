@@ -1,0 +1,12 @@
+.button_del {
+	position: relative;
+	border-radius: 5px;
+	background: #ff6767;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border: 0px;
+}
