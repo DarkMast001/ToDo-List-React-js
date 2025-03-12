@@ -15,3 +15,10 @@ font-optical-sizing: auto;
 	padding: 0px;
 	box-sizing: border-box;
 }
+
+@media (max-width: 500px) {
+	:root {
+		--intro-font-size: 24px;
+		--all-font-size: 14px;
+	}
+}

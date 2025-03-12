@@ -6,7 +6,7 @@ import TasksList from "./components/TasksList/TasksList"
 function App() {
     const [tasksList, setTasksList] = useState(() => {
 		const savedTasks = localStorage.getItem('tasks');
-		return savedTasks ? JSON.parse(savedTasks) : []
+		return savedTasks ? JSON.parse(savedTasks) : [];
 	})
 
     useEffect(() => {
@@ -17,7 +17,7 @@ function App() {
         <>
             <IntroText />
             <MakerTasks tasksList={tasksList} setTasksList={setTasksList} />
-            <TasksList tasksList={tasksList}/>
+            <TasksList tasksList={tasksList} setTasksList={setTasksList}/>
         </>
     )
 }

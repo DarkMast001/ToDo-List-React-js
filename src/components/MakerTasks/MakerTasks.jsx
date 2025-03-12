@@ -9,21 +9,15 @@ export default function MakerTasks({tasksList, setTasksList}) {
 
 	const handleSaveTask = () => {
 		if (task.trim()) {
-			setTasksList([...tasksList, task])
+			setTasksList([task, ...tasksList])
 			setTask('')
 		}
-	}
-
-	const handleClearStorage = () => {
-		localStorage.clear()
-		tasksList.splice(0, tasksList.length)
 	}
 
 	return (
 		<div className="input_container">
 			<Input task={task} setTask={setTask} onEnter={handleSaveTask}/>
 			<ButtonPlan onClick={handleSaveTask}>Запланировать!</ButtonPlan>
-			<ButtonPlan onClick={handleClearStorage}>Очистить</ButtonPlan>
 		</div>
 	)
 }
